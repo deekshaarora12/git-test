@@ -13,4 +13,4 @@ jobs:
     - name: run .txt file
       run: python sample.py
       env:
-        TOKEN_SECRET_NAME: ${{ secrets.TEST_SECRET.token }}
+        TOKEN_SECRET_NAME: ${{ secrets.token }}
