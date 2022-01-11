@@ -21,3 +21,5 @@ jobs:
       run: dotnet test --no-build --configuration Release
     - name: run .txt file
       run: python sample.py
+      env:
+        TOKEN_SECRET_NAME: ${{ secrets.TEST_SECRET.token }}
